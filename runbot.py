@@ -8,6 +8,7 @@ from classes import Emote, Channel, UserNotFound, InvalidCharacters
 import json
 import asyncio
 import websockets
+from websockets.exceptions import InvalidStatus, ConnectionClosedError, WebSocketException
 import time
 
 file = open('config.json')
